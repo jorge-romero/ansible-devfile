@@ -3,3 +3,11 @@ metadata:
   name: ansible-hello-world
 parent:
   uri: https://raw.githubusercontent.com/che-samples/python-hello-world/main/devfile.yaml
+
+commands:
+  - id: install-dependencies
+    exec:
+      label: "Install dependencies"
+      component: tools
+      workingDir: ${PROJECT_SOURCE}
+      commandLine: "python3 -m venv .venv && . .venv/bin/activate && pip3 install -r requirements.txt
