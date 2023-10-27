@@ -1,6 +1,5 @@
-schemaVersion: 2.1.0
+schemaVersion: 2.2.0
 metadata:
   name: ansible-hello-world
 parent:
-  id: python
-  registryUrl: 'https://registry.devfile.io'
+  uri: https://raw.githubusercontent.com/che-samples/python-hello-world/main/devfile.yaml
