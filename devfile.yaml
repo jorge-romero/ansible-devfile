@@ -11,11 +11,11 @@ commands:
       workingDir: ${PROJECT_SOURCE}
       commandLine: "python -m venv .venv && . .venv/bin/activate && pip3 install -r requirements.txt"
 
-  - id: post-start-initialization
+  - id: pre-start-initialization
     composite:
       commands:
         - install-dependencies
 events:
-  postStart:
-    - post-start-initialization
+  preStart:
+    - pre-start-initialization
 
