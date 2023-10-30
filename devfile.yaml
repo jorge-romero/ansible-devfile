@@ -1,4 +1,4 @@
-schemaVersion: 2.2.0
+schemaVersion: 2.2.1
 metadata:
   name: ansible-hello-world
 parent:
@@ -7,7 +7,6 @@ parent:
 commands:
   - id: install-dependencies
     exec:
-      label: "Install dependencies"
       component: tools
       workingDir: ${PROJECT_SOURCE}
       commandLine: "python -m venv .venv && . .venv/bin/activate && pip3 install -r requirements.txt"
